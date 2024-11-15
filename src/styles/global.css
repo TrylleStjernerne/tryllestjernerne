@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: "";
+}
+
+body {
+  background: linear-gradient(#070124, #364273);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  /* FARVER */
+
+  --header1-color: #a77334;
+  --header2-color: #bd7b2a;
+  --body-color: #d9d9d9;
+
+  --button-hover-color: #e4c282;
+
+  /* TYPOGRAFI STØRRELSE */
+  --fontsize-display-mobile: 4rem;
+  --fontsize-display-tagline-mobile: 1.5rem;
+  --fontsize-h1-mobile: 2rem;
+  --fontsize-h2-mobile: 2rem;
+  --fontsize-p-mobile: 0.5rem;
+
+  --fontsize-display: 6rem;
+  --fontsize-display-tagline: 2.25rem;
+  --fontsize-h1: 3rem;
+  --fontsize-h2: 3rem;
+  --fontsize-p: 1rem;
+  --fontsize-button: 2rem;
+
+  /* SPACING */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+
+  --space-sm-mobile: 0.25rem;
+  --space-md-mobile: 0.75rem;
+}
+
+h1 {
+  color: var(--header1-color);
+  font-family: "Goblin One", serif;
+  text-align: center;
+}
+
+h2 {
+  color: var(--header2-color);
+  font-family: "Sue Ellen Francisco", cursive;
+  text-align: center;
+}
+
+p {
+  color: var(--body-color);
+  font-family: Helvetica;
+  line-height: 1.5rem;
+  margin-left: 2.5rem;
+}
+
+.display {
+  color: var(--header2-color);
+  font-family: "Sancreek", serif;
+  text-align: left;
+  margin-left: 2.5rem;
+  margin-top: 5rem;
+}
+
+.tagline {
+  color: var(--header2-color);
+  font-family: "Sancreek", serif;
+  text-align: left;
+  margin-left: 2.5rem;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  h1 {
+    font-size: var(--fontsize-h1-mobile);
+    margin-bottom: var(--space-md-mobile);
+  }
+
+  h2 {
+    font-size: var(--fontsize-h2-mobile);
+    margin-bottom: var(--space-sm-mobile);
+  }
+
+  .display {
+    font-size: var(--fontsize-display-mobile);
+    line-height: 5rem;
+  }
+
+  .tagline {
+    font-size: var(--fontsize-display-tagline-mobile);
+  }
+
+  p {
+    font-size: var(--fontsize-body-mobile);
+    margin-bottom: var(--space-sm-mobile);
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: var(--fontsize-h1);
+    margin-bottom: var(--space-md);
+  }
+
+  h2 {
+    font-size: var(--fontsize-h2);
+    margin-bottom: var(--space-sm);
+  }
+
+  .display {
+    font-size: var(--fontsize-display);
+    line-height: 7.5rem;
+  }
+
+  .tagline {
+    font-size: var(--fontsize-display-tagline);
+  }
+
+  p {
+    font-size: var(--fontsize-body);
+    margin-bottom: var(--space-sm);
+  }
+}
