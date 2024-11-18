@@ -26,6 +26,7 @@
     background-image: url(./images/hero_img.webp); 
     background-size: cover; 
     background-position: center; 
+     background-repeat: no-repeat;
     height: 100vh;
     width: 100%; 
     display: flex; 
@@ -84,6 +85,22 @@ p {
 }
 
 /* Mobile and tablet responsive styles */
+
+
+@media (max-width: 928px) {
+     h1 {
+        font-size: 2rem; 
+    }
+
+    h2 {
+        font-size: 1.8rem; 
+    }
+
+    p {
+        font-size: 0.8rem; 
+    }
+
+}
 @media (max-width: 768px) {
     .text-content {
         max-width: 90%; 
@@ -91,25 +108,40 @@ p {
         text-align: center; 
     }
 
-    /* Adjust header container for smaller screens */
     .header-container {
-        background-position: top; /* Keeps image aligned to the top */
-        min-height: 100vh; /* Ensures the container still takes up full height on small screens */
+        background-position: top;
+        min-height: 100vh;
     }
 
-    /* Adjust font sizes for smaller screens */
     h1 {
-        font-size: 2.5rem; 
+        font-size: 1.8rem;
     }
 
     h2 {
-        font-size: 2rem; 
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 1rem; 
+        font-size: 0.5rem;
     }
 }
+
+@media (max-width: 515px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    .heroimage p {
+        font-size: 0.3rem; 
+        /* display: block;  */
+    }
+}
+</style>
+
 
 
 
