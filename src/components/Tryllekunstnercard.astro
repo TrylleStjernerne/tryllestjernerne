@@ -1,15 +1,76 @@
 ---
-const { img, title, billet, link } = Astro.props;
+
 ---
 <div class="tryllekunstner">
-    <div>
+    <div class="indhold">
         <h1>Lasse K</h1>
         <p>Min uhøjtidelige og engagerende tilgang får børnene til at grine hjerteligt, mens de sidder på kanten af deres sæder i forundring over de magiske tricks, der udfolder sig foran deres øjne.</p>
         <p>At have mig til at optræde til dit børneevent er en sikker måde at tilbyde en sjov, interaktiv og mindeværdig oplevelse, der vil efterlade børnene forundrede og begejstrede. Mine forestillinger er ideelle til skolearrangementer, børnefødselsdage, familiefester og andre begivenheder, hvor børnenes underholdning er i centrum.</p>
     </div>
     <div>
-        <img src="" alt="billede" />
+        <img class="lasse" src="../lassek.jpg" alt="billede" />
     </div>
+</div>
+<div class="tryllekunstner">
+  <div class="indhold">
+      <h1>Fup & Fidus</h1>
+      <p>Jeg ELSKER at trylle for børn og familier! Hvis I leder efter underholdning til firmafesten, familiefesten, byfesten, skolefesten eller enhver anden lejlighed, hvor børn eller familier er samlet, så vil det glæde mig at komme med et sjovt trylleshow med levende dyr og grine-garanti! Under showet vil flere børn være i fokus og blive dagens stjerner!</p>
+  </div>
+  <div>
+      <img class="fupogfidus" src="../fupogfidus.png" alt="billede" />
+  </div>
+</div>
+<div class="tryllekunstner">
+  <div class="indhold">
+      <h1>Henny Solskin</h1>
+      <p>Humørspreder & Tryllekunstner kendt fra TV - leverer et show med fest, farver og levende dyr, som efter showet må a'es og fodres.</p>
+      <p>Showet henvender sig til børn og barnlige sjæle - 0 - 99 år.
+        Publikum inddrages i showet - der kommer smil på læben og ofte et godt grin - du/I  får en enestående oplevelse, der vil huskes længe efter...   </p>
+  </div>
+  <div>
+      <img class="hennysolskin" src="../hennysolskin.png" alt="billede" />
+  </div>
+</div>
+<div class="tryllekunstner">
+  <div class="indhold">
+      <h1>Tryllestøv</h1>
+      <p>Tryllestøv tager publikum med til eventyrland, hvor alt kan ske. Børnene er stjernerne der med tryllestav fra deres pladser er med til at trylle. Andre på scenen som tryller med tryllestav, høj hat og tryllekappe.</p>
+      <p>
+        Tryllestøv leverer fantastisk underholdning, der inddrager publikum og giver en uforglemmelig oplevelse. Alle børn får en magisk tryllestav, det er dem, der kommer i centrum og bl.a. tryller med ild, fremtryller forskellige levende dyr og meget mere.</p>
+  </div>
+  <div>
+      <img class="tryllestoev" src="../tryllestoev.jpg" alt="billede" />
+  </div>
+</div>
+<div class="tryllekunstner">
+  <div class="indhold">
+      <h1>Trylle Michael</h1>
+      <p>Michael optræder til firmaevents og private arrangementer i ind- og udland, på dansk eller engelsk, på hospitaler for børn og unge samt online – med originale interaktive tankelæsnings- og trylleshows.</p>
+      <p>
+        Michael lover masser af gode grin og “hvordan gjorde han det?”</p>
+  </div>
+  <div>
+      <img class="tryllemichael" src="../tryllemichael.jpg" alt="billede" />
+  </div>
+</div>
+<div class="tryllekunstner">
+  <div class="indhold">
+      <h1>Fabelagtige Falbe</h1>
+      <p>Fabelagtige Falbe underholder med et humoristisk trylleshow, med grinegaranti og underholdende stemning. Gennem mange hundrede optrædener har han finpudset sin stil, med både farlige og underholdende tricks så han ved, hvordan han kan give netop jer en oplevelse, de sent vil glemme.</p>
+  </div>
+  <div>
+      <img class="fabelagtigefalbe" src="../fabelagtigefalbe.png" alt="billede" />
+  </div>
+</div>
+<div class="tryllekunstner">
+  <div class="indhold">
+      <h1>Birger Vest</h1>
+      <p>Birger Vest behøver ikke meget mere end et kortspil, en pengeseddel, nogle fingerringe og et par mannequin arme – for at skabe en magisk, sjov og uforglemmelig oplevelse.</p>
+      <p>Det er underholdning med stor interaktion, hvor publikum er en aktiv del af tryllerierne.</p>
+  </div>
+  <div>
+      <img class="birgervest" src="../birgervest.png" alt="billede" />
+  </div>
 </div>
 
 <style>
@@ -18,4 +79,13 @@ const { img, title, billet, link } = Astro.props;
     grid-template-columns: 1fr 1fr;
     background-color: black;
   }
+
+  p{
+    max-width:65ch;
+  }
+
+.indhold{
+  margin-top:15rem;
+}
+
 </style>
