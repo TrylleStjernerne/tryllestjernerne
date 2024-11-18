@@ -1,0 +1,117 @@
+<div class="header-container">
+    <div class="logo"></div>
+    <div class="heroimage">
+        <div><h1>TrylleStjernerne</h1>
+            <h2>Vi skaber lyset i mørket</h2>
+ <p>
+                I TrylleStjernerne er det formålet, at vores magikere er til stede på alle landets børneafdelinger og skaber magi og glæde, så børnene bliver opslugt af de spændende magiske tricks og bliver underholdt og får en ægte pause fra sygdom, kedelig ventetid, frygt for ubehag eller sorg.
+            </p>
+            <p>
+                Magic Kids er for børn i alle aldre. Blandt andet små trylletricks, som er sjove for de lidt større børn, og disse tricks foræres til børnene, så de kan øve sig og trylle videre.
+            </p>
+            <p>
+                Der er tricks og balloner for de lidt mindre børn, som kan forundres og grine og få et ballondyr.
+                For de største børn, er der kort tricks og små illusioner, der er sjove at udføre foran vennerne, når de bliver udskrevet, eller når disse kommer på besøg.
+            </p>
+        
+        </div>
+
+    </div>
+</div>
+
+<style>
+
+/* Container holding the background image */
+.header-container {
+    background-image: url(./images/hero_img.webp); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    position: relative; 
+}
+
+/* Gradient overlay */
+.header-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba rgba(7, 1, 36, 1), rgba(0, 0, 0, 0.3)); /* Adds a dark gradient overlay */
+    z-index: 1; /* Ensures the overlay is above the image */
+}
+
+/* Text container */
+.heroimage {
+    position: relative;
+    z-index: 2; /* Places text above the overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    max-width: 50%; /* Limits the width of the content area */
+}
+
+/* Text styling */
+.text-content {
+    color: white;
+    max-width: 50%; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Enhances text contrast */
+    margin-left: 2rem;
+    text-align: left;
+}
+
+/* Heading and paragraph styling */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Mobile and tablet responsive styles */
+@media (max-width: 768px) {
+    .text-content {
+        max-width: 90%; 
+        margin-left: 1rem;
+        text-align: center; 
+    }
+
+    /* Adjust header container for smaller screens */
+    .header-container {
+        background-position: top; /* Keeps image aligned to the top */
+        min-height: 100vh; /* Ensures the container still takes up full height on small screens */
+    }
+
+    /* Adjust font sizes for smaller screens */
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    h2 {
+        font-size: 2rem; 
+    }
+
+    p {
+        font-size: 1rem; 
+    }
+}
+
+
+
+
+
