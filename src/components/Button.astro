@@ -1,13 +1,36 @@
 ---
-const { variant, size } = Astro.props;
+
 ---
 
-<button class={variant}><slot /></button>
+<div class="button">
+    <h2 class="button_p"><slot></slot></h2>
+    <a href="default.asp"><img src="../button.png" alt="button"></a>
+</div>
 
 <style>
 
+.button_p{
+    position:absolute;
+    color: var(--body-color);
+    left:1%;
+    padding-top:1rem;
+    font-size:2rem;
+    font-style: italic;
+    cursor:pointer;
+    font-weight:200;
+}
 .button{
-    background: url("../");
+    width:15%;
+    margin:1rem;
+}
+
+.button:hover{
+    -webkit-transform:scale(1.2); 
+    transform:scale(1.2);
+}
+
+.button_p:hover{
+    color:#E4C282;
 }
 
 </style>
