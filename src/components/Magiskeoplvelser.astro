@@ -1,24 +1,19 @@
 ---
 
 ---
-<div class="magiskeoplevelser">
-    <div>
-        <img src="../maroonmagician.svg" alt="billede" />
-    </div>
-    <div>
-        <h1>Børnrnes magiske oplevelser</h1>
-        <h2>"GLÆDE MIDT I EN SVÆR TID"</h2>
+<div>
+  <h1>Børnenes magiske oplevelser</h1>
+  <h2>"GLÆDE MIDT I EN SVÆR TID"</h2>
 </div>
-
+<div class="standard_scroll_section">
+  <div>
+    <img src="../maroonmagician.svg" alt="billede" />
+  <div>
 <style>
-  .magiskeoplevelser{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
-  }
 
   h1{
     text-align: center;
+    margin:1rem;
     margin-top:10rem;
   }
 
@@ -27,6 +22,28 @@
   }
 
   img{
+    height:80vh;
+    max-width:870px;
   }
+  .standard_scroll_section {
+  width: 100vw;
+
+  /* border-radius: 3rem;
+
+  margin-bottom: 4rem;
+  padding: 3rem; */
+}
 
 </style>
+
+<script>
+  import { animate, scroll } from "motion"
+const allStandardScrollSection = document.querySelectorAll(".standard_scroll_section");
+
+allStandardScrollSection.forEach((eachSection) => {
+  scroll(animate(eachSection, { scale: [1, 8] }, { ease: "linear" }), {
+    target: eachSection,
+    offset: ["start 100px", "end start"],
+  });
+});
+</script>
