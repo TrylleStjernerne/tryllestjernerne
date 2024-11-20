@@ -1,97 +1,28 @@
 <div class="book-section">
     <div class="book-text">
-        <h2>Mød vores Tryllekunstnere</h2>
-        <h3>TrylleStjernerne består af i alt syv forskellige tryllekunstnere.</h3>
+        <h1>Mød vores Tryllekunstnere</h1>
+        <h2>TrylleStjernerne består af i alt syv forskellige tryllekunstnere.</h2>
     </div>
-    <div class="book-glowpic">
         <div class="bookpic">
             <img src="./images/book_img.webp" alt="Book">
         </div>
-    </div>
+   
 </div>
 
+
+
 <style>
-/* Container styles */
-.book-section {
-    position: relative; 
+    /* Container styles */
+.book-section { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     padding: 2rem; 
     height: 100vh; 
     width: 100%; 
-    overflow: hidden; 
-    background-color: #070124;
+     animation: glow 2s ease-in-out infinite alternate; 
+    
 }
-
-/* Glowing star background */
-.book-section::after {
-    content: '';
-    position: absolute;
-    top: -6%; /* Allows the image to extend slightly upward */
-    right: -10%; /* Moves the background off-screen slightly */
-    width: 91%; /* Covers a wider portion of the right side */
-    height: 110%; /* Extends height to maintain aspect ratio */
-    background: url('./images/stars_master.webp') no-repeat;
-    background-repeat: no-repeat;
-    background-size: contain; /* Maintains the aspect ratio of the image */
-    background-position: center; /* Centers the background */
-    opacity: 1.6; /* Adjusts transparency */
-    z-index: 0; /* Places it behind content */
-    pointer-events: none; /* Prevents interaction with the background */
-}
-
-/* Book image styles */
-.book-glowpic {
-    position: relative; /* Keeps it above the background */
-    z-index: 2; /* Higher than the background */
-    width: 40%; /* Adjusts width for layout balance */
-    display: flex; /* Centers the image */
-    justify-content: center;
-    align-items: center;
-}
-
-.book-glowpic img {
-    width: 100%; /* Makes the image fully responsive */
-    height: auto; /* Maintains aspect ratio */
-}
-
-/* Text content styles */
-.book-text {
-    position: relative; 
-    z-index: 2; 
-    width: 50%; 
-    color: white; 
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); 
-    padding: 2rem; 
-    text-align: left;
-}
-
-.book-text h2 {
-    font-size: 4.5rem;
-    margin-bottom: 1rem;
-    color: rgba(189, 123, 42, 1); /* Text color */
-    padding-right: 14rem;
-}
-
-.book-text h3 {
-    font-size: 2rem;
-    color: rgba(189, 123, 42, 1); /* Slightly lighter text for subheading */
-    margin-top: 1rem;
-}
-
-.bookpic {
-  animation: glow 2s ease-in-out infinite alternate; /* Apply glow animation */
-  display: inline-block; /* Ensure it works as an isolated block */
-}
-
-.bookpic img {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-}
-
-/* Keyframes for the glow animation */
 @keyframes glow {
   0% {
     box-shadow: 0 0 5px 5px rgba(255, 255, 172, 1); /* Initial glow effect */
@@ -100,6 +31,34 @@
     box-shadow: 0 0 40px 30px rgba(255, 255, 172, 0.5); /* Expanded glow effect */
   }
 }
+
+/* Text content styles */
+.book-text {
+  
+    width: 50%; 
+    padding: 2rem; 
+    text-align: left;
+}
+
+.book-text h1 {
+ 
+    margin-bottom: 1rem;
+    color: rgba(189, 123, 42, 1);
+    padding-right: 14rem;
+}
+
+.book-text h2 {
+    /* font-size: 2rem; */
+    color: rgba(189, 123, 42, 1); 
+    margin-top: 1rem;
+}
+.bookpic img {
+  width: 100%; 
+  height: auto; 
+  transition: all 0.3s ease; 
+}
+
+
 /* Hover effect on .bookpic div */
 .bookpic:hover img {
   transform: scale(0.95); /* Slightly shrink the image */
@@ -107,7 +66,21 @@
   opacity: 0.8; /* Reduce opacity */
 }
 
+
+
 /* Responsive adjustments */
+
+
+@media (max-width: 1610px) {
+    .book-text h1 {
+        font-size: 1.8rem; /* Slightly smaller */
+    }
+
+    .book-text h2 {
+        font-size: 1.2rem; /* Slightly smaller */
+    }
+}
+
 @media (max-width: 768px) {
     .book-section {
         flex-direction: column; 
@@ -122,28 +95,36 @@
         /* right: 17px; */
         opacity: 1; 
     }
-
-    .book-glowpic,
-    .book-text {
-        width: 100%; /* Full width for stacked layout */
-    }
-
     .book-text {
         padding: 1rem; 
     }
-     .book-text h2 {
-        font-size: 2rem; 
+    .book-text h1 {
+        font-size: 1rem; 
         padding-right: 0; 
-        margin-bottom: 0.5rem; 
     }
-
-    .book-text h3 {
-        font-size: 0.6rem; 
-        margin-top: 0.5rem; 
-          padding-left: 29px;
+    .book-text h2 {
+        font-size: 0.5rem; 
+        padding-left: 15px; 
     }
+    .bookpic img { /*trying to make the book image size a bit smaller*/
+  width: 50%; 
+  height: 20%;
 }
 
+/* For screens smaller than 500px */
+@media (max-width: 500px) {
+    .book-text h1 {
+        font-size: 0.8rem; 
+        margin-bottom: 0.3rem; 
+    }
+
+    .book-text h2 {
+        font-size: 0.4rem; 
+        margin-top: 0.3rem; 
+        padding-left: 10px; 
+    }
+}
+}
 
 
 </style>

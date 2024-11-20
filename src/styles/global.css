@@ -27,9 +27,9 @@ html {
   /* TYPOGRAFI STØRRELSE */
   --fontsize-display-mobile: 4rem;
   --fontsize-display-tagline-mobile: 1.5rem;
-  --fontsize-h1-mobile: 2rem;
-  --fontsize-h2-mobile: 2rem;
-  --fontsize-p-mobile: 0.5rem;
+  --fontsize-h1-mobile: 1.8rem;
+  --fontsize-h2-mobile: 1rem;
+  --fontsize-p-mobile: 0.8rem;
 
   --fontsize-display: 6rem;
   --fontsize-display-tagline: 2.25rem;
