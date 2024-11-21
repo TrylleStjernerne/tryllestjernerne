@@ -14,13 +14,12 @@
 <style>
     /* Container styles */
 .book-section { 
-    display: flex; 
-    justify-content: space-between; 
+    display: grid; 
     align-items: center; 
     padding: 2rem; 
     height: 100vh; 
     width: 100%; 
-     animation: glow 2s ease-in-out infinite alternate; 
+    animation: glow 2s ease-in-out infinite alternate; 
     
 }
 @keyframes glow {
@@ -32,19 +31,6 @@
   }
 }
 
-/* Text content styles */
-.book-text {
-  
-    width: 50%; 
-    padding: 2rem; 
-    text-align: left;
-}
-
-.book-text h1 {
- 
-    margin-bottom: 1rem;
-    padding-right: 14rem;
-}
 
 .book-text h2 {
     /* font-size: 2rem; */
@@ -64,65 +50,11 @@
   opacity: 0.8; /* Reduce opacity */
 }
 
-
-
-/* Responsive adjustments */
-
-
-@media (max-width: 1610px) {
-    /* .book-text h1 {
-        font-size: 1.8rem; /* Slightly smaller */
-    }
-
-    .book-text h2 {
-        font-size: 1.2rem; /* Slightly smaller */
-    } */
-}
-
-@media (max-width: 768px) {
-    .book-section {
-        flex-direction: column; 
-        text-align: center; 
-        height: auto; 
-    }
-
-    .book-section::after {
-        width: 100%; 
-        height: 139%; 
-        top: 0;
-        /* right: 17px; */
-        opacity: 1; 
-    }
-    .book-text {
-        padding: 1rem; 
-    }
-    .book-text h1 {
-        font-size: 1rem; 
-        padding-right: 0; 
-    }
-    .book-text h2 {
-        font-size: 0.5rem; 
-        padding-left: 15px; 
-    }
-    .bookpic img { /*trying to make the book image size a bit smaller*/
-  width: 50%; 
-  height: 20%;
-}
-
-/* For screens smaller than 500px */
-@media (max-width: 500px) {
-    .book-text h1 {
-        font-size: 0.8rem; 
-        margin-bottom: 0.3rem; 
-    }
-
-    .book-text h2 {
-        font-size: 0.4rem; 
-        margin-top: 0.3rem; 
-        padding-left: 10px; 
+@media (min-width: 750px) {
+    .book-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     }
 }
-}
 
-
-</style>
+</style> 

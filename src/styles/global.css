@@ -27,9 +27,9 @@ html {
   --button-hover-color: #e4c282;
 
   /* TYPOGRAFI STØRRELSE */
-  --fontsize-display-mobile: 4rem;
+  --fontsize-display-mobile: 6rem;
   --fontsize-display-tagline-mobile: 1.5rem;
-  --fontsize-h1-mobile: 1.8rem;
+  --fontsize-h1-mobile: 1.5rem;
   --fontsize-h2-mobile: 1.2rem;
   /* changes values and added h3 amd h4*/
   --fontsize-h3-mobile: 1rem;
@@ -107,11 +107,13 @@ p {
   h1 {
     font-size: var(--fontsize-h1-mobile);
     margin-bottom: var(--space-md-mobile);
+    margin-left: 0.5rem;
   }
 
   h2 {
     font-size: var(--fontsize-h2-mobile);
     margin-bottom: var(--space-sm-mobile);
+    margin-left: 0.5rem;
   }
 
   .display {
@@ -126,6 +128,7 @@ p {
   p {
     font-size: var(--fontsize-p-mobile);
     margin-bottom: var(--space-sm-mobile);
+    margin-left: 0.5rem;
   }
 }
 
@@ -180,30 +183,6 @@ p {
   p {
     font-size: var(--fontsize-p);
     margin-bottom: var(--space-sm);
-  }
-}
-
-/* LARGE DESKTOP (min-width: 1200px) */
-@media (min-width: 1200px) {
-  h1 {
-    font-size: var(--fontsize-h1);
-  }
-
-  h2 {
-    font-size: var(--fontsize-h2);
-  }
-
-  .display {
-    font-size: var(--fontsize-display);
-    line-height: 8rem;
-  }
-
-  .tagline {
-    font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 1rem; /* Full size text for large screens */
   }
 }
 

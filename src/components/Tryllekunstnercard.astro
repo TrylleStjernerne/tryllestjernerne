@@ -119,6 +119,8 @@ img{
   position: sticky;
   top: 0; 
 
+  background-color: black;
+
 }
 
 </style>
@@ -126,7 +128,7 @@ img{
     import { animate, scroll } from "motion"
     scroll(
   animate(".horizontal_scroll_inner_container", {
-    transform: ["translateX(0vw)", "translateX(calc(-665vw))"],
+    transform: ["translateX(0vw)", "translateX(calc(-10765px))"],
   }),
   { target: document.querySelector(".horizontal_scroll") }
 );
