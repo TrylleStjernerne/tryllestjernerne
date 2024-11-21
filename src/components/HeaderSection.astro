@@ -22,8 +22,6 @@
 
 <style>
 
-
-
 /* herocontainer */
 .heroimage {
      background-image: url(./images/hero_img.webp); 
@@ -33,90 +31,41 @@
     background-position: center;
     min-height: 100vh;
     background-attachment: fixed;
+     display: block;
 
 }
-
-/* Text styling */
-.text-content {
-    color: white;
-    max-width: 50%; 
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); 
-    margin-left: 2rem;
-    text-align: left;
-    padding-top: 17rem;
-    padding-left: 2rem;
-    padding-right: 16rem;
- 
+  /* Text styling */
+  .text-content {
+  color: white;
+  max-width: 50%; /* Restrict the width of text */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: left; /* Ensure the text is aligned left */
+  padding: 2rem;
+  padding-top: 17rem; /* Space the text from top */
+  margin-left: 2rem; /* Add margin for left side */
 }
 
-/* Heading and paragraph styling */
-h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+
+  /* Mobile responsiveness */
+ @media (max-width: 768px) {
+  .text-content {
+    max-width: 80%; /* Increase text content width on mobile */
+    padding: 2rem; /* Adjust padding */
+    padding-top: 10rem; /* Adjust space from top */
+    margin-left: 1rem; /* Adjust margin for mobile */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjust font size */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-/* Mobile and tablet responsive styles */
-
-
-@media (max-width: 928px) {
-     h1 {
-        font-size: 2rem; 
-    }
-
-    h2 {
-        font-size: 1.8rem; 
-    }
-
-    p {
-        font-size: 0.8rem; 
-    }
-
-}
-@media (max-width: 768px) {
-    /* .text-content {
-        max-width: 30%; 
-        margin-left: 1rem;
-        text-align: center; 
-    } */
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.5rem;
-    }
-}
-
-@media (max-width: 515px) {
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    h2 {
-        font-size: 0.8rem;
-    }
-
-    .text-content p {
-        /* font-size: 0.3rem;  */
-        display: block; 
-    }
-}
+    
 </style>
 
 
