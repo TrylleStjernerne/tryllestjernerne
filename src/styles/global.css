@@ -38,7 +38,7 @@ html {
 
   --fontsize-display: 6rem;
   --fontsize-display-tagline: 2.25rem;
-  --fontsize-h1: 4rem;
+  --fontsize-h1: 3rem;
   --fontsize-h2: 3rem;
   --fontsize-h3: 2.5rem;
   --fontsize-h4: 2rem;
@@ -132,17 +132,17 @@ p {
 /* TABLET (min-width: 601px and max-width: 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
   h1 {
-    font-size: 3.2rem; /* Adjusted font size for tablets */
+    font-size: var(--fontsize-h1);
     margin-bottom: var(--space-md);
   }
 
   h2 {
-    font-size: 2.5rem; /* Adjusted font size for tablets */
+    font-size: var(--fontsize-h2);
     margin-bottom: var(--space-sm);
   }
 
   .display {
-    font-size: 5rem; /* Adjusted font size for tablets */
+    font-size: var(--fontsize-display-mobile);
     line-height: 6rem;
   }
 
@@ -186,15 +186,15 @@ p {
 /* LARGE DESKTOP (min-width: 1200px) */
 @media (min-width: 1200px) {
   h1 {
-    font-size: 4.5rem; /* Increased for larger screens */
+    font-size: var(--fontsize-h1);
   }
 
   h2 {
-    font-size: 3.5rem; /* Increased for larger screens */
+    font-size: var(--fontsize-h2);
   }
 
   .display {
-    font-size: 6rem; /* Increased for larger screens */
+    font-size: var(--fontsize-display);
     line-height: 8rem;
   }
 
