@@ -1,1 +1,14 @@
-<h1>mie</h1>
+---
+import Anmeldelser from "../components/Anmeldelser.astro"
+import ForaeldreFacts from "../components/Foraeldre_facts.astro"
+import Foraldrehjaelp from "../components/Foraldrehjaelp.astro"
+import KalenderIntro from "../components/KalenderIntro.astro"
+import MainLayout from "../layouts/MainLayout.astro"
+---
+
+<MainLayout>
+   <Foraldrehjaelp></Foraldrehjaelp>
+   <ForaeldreFacts></ForaeldreFacts>
+   <Anmeldelser></Anmeldelser>
+   <KalenderIntro></KalenderIntro>
+</MainLayout>
