@@ -20,6 +20,8 @@ html {
 
   --header1-color: #a77334;
   --header2-color: #bd7b2a;
+  --header3-color: #bd7b2a;
+  --header4-color: #bd7b2a;
   --body-color: #d9d9d9;
 
   --button-hover-color: #e4c282;
@@ -27,14 +29,19 @@ html {
   /* TYPOGRAFI STØRRELSE */
   --fontsize-display-mobile: 4rem;
   --fontsize-display-tagline-mobile: 1.5rem;
-  --fontsize-h1-mobile: 2rem;
-  --fontsize-h2-mobile: 2rem;
-  --fontsize-p-mobile: 0.5rem;
+  --fontsize-h1-mobile: 1.8rem;
+  --fontsize-h2-mobile: 1.2rem;
+  /* changes values and added h3 amd h4*/
+  --fontsize-h3-mobile: 1rem;
+  --fontsize-h4-mobile: 0.9rem;
+  --fontsize-p-mobile: 0.6rem;
 
   --fontsize-display: 6rem;
   --fontsize-display-tagline: 2.25rem;
-  --fontsize-h1: 3rem;
+  --fontsize-h1: 4rem;
   --fontsize-h2: 3rem;
+  --fontsize-h3: 2.5rem;
+  --fontsize-h4: 2rem;
   --fontsize-p: 1rem;
   --fontsize-button: 2rem;
 
@@ -58,6 +65,18 @@ h2 {
   font-family: "Sue Ellen Francisco", cursive;
   margin-left: 2.5rem;
 }
+/*added by farwa*/
+h3 {
+  color: var(--header3-color);
+  font-family: "Goblin One", serif;
+  margin-left: 2.5rem;
+}
+h4 {
+  color: var(--header4-color);
+  font-family: "Sue Ellen Francisco", cursive;
+  margin-left: 2.5rem;
+}
+/*added by farwa*/
 
 p {
   color: var(--body-color);
@@ -81,8 +100,117 @@ p {
   margin-left: 2.5rem;
 }
 
-/* MOBILE */
+/*Farwa added this only */
+
+/* MOBILE (max-width: 600px) */
 @media (max-width: 600px) {
+  h1 {
+    font-size: var(--fontsize-h1-mobile);
+    margin-bottom: var(--space-md-mobile);
+  }
+
+  h2 {
+    font-size: var(--fontsize-h2-mobile);
+    margin-bottom: var(--space-sm-mobile);
+  }
+
+  .display {
+    font-size: var(--fontsize-display-mobile);
+    line-height: 5rem;
+  }
+
+  .tagline {
+    font-size: var(--fontsize-display-tagline-mobile);
+  }
+
+  p {
+    font-size: var(--fontsize-p-mobile);
+    margin-bottom: var(--space-sm-mobile);
+  }
+}
+
+/* TABLET (min-width: 601px and max-width: 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  h1 {
+    font-size: 3.2rem; /* Adjusted font size for tablets */
+    margin-bottom: var(--space-md);
+  }
+
+  h2 {
+    font-size: 2.5rem; /* Adjusted font size for tablets */
+    margin-bottom: var(--space-sm);
+  }
+
+  .display {
+    font-size: 5rem; /* Adjusted font size for tablets */
+    line-height: 6rem;
+  }
+
+  .tagline {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+  }
+}
+
+/* DESKTOP (min-width: 901px and up) */
+@media (min-width: 901px) {
+  h1 {
+    font-size: var(--fontsize-h1);
+    margin-bottom: var(--space-md);
+  }
+
+  h2 {
+    font-size: var(--fontsize-h2);
+    margin-bottom: var(--space-sm);
+  }
+
+  .display {
+    font-size: var(--fontsize-display);
+    line-height: 7.5rem;
+  }
+
+  .tagline {
+    font-size: var(--fontsize-display-tagline);
+  }
+
+  p {
+    font-size: var(--fontsize-p);
+    margin-bottom: var(--space-sm);
+  }
+}
+
+/* LARGE DESKTOP (min-width: 1200px) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4.5rem; /* Increased for larger screens */
+  }
+
+  h2 {
+    font-size: 3.5rem; /* Increased for larger screens */
+  }
+
+  .display {
+    font-size: 6rem; /* Increased for larger screens */
+    line-height: 8rem;
+  }
+
+  .tagline {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem; /* Full size text for large screens */
+  }
+}
+
+/*Nanna added this */
+
+/* MOBILE */
+/* @media (max-width: 600px) {
   h1 {
     font-size: var(--fontsize-h1-mobile);
     margin-bottom: var(--space-md-mobile);
@@ -106,11 +234,11 @@ p {
     font-size: var(--fontsize-body-mobile);
     margin-bottom: var(--space-sm-mobile);
   }
-}
+} */
 
 /* DESKTOP */
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   h1 {
     font-size: var(--fontsize-h1);
     margin-bottom: var(--space-md);
@@ -134,4 +262,4 @@ p {
     font-size: var(--fontsize-body);
     margin-bottom: var(--space-sm);
   }
-}
+} */

@@ -1,7 +1,8 @@
-<div class="header-container">
+
     <div class="logo"></div>
     <div class="heroimage">
-        <div><h1>TrylleStjernerne</h1>
+        <div class="text-content">
+            <h1>TrylleStjernerne</h1>
             <h2>Vi skaber lyset i mørket</h2>
  <p>
                 I TrylleStjernerne er det formålet, at vores magikere er til stede på alle landets børneafdelinger og skaber magi og glæde, så børnene bliver opslugt af de spændende magiske tricks og bliver underholdt og får en ægte pause fra sygdom, kedelig ventetid, frygt for ubehag eller sorg.
@@ -17,129 +18,54 @@
         </div>
 
     </div>
-</div>
+
 
 <style>
 
-/* Container holding the background image */
-.header-container {
-    background-image: url(./images/hero_img.webp); 
-    background-size: cover; 
-    background-position: center; 
-     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%; 
-    display: flex; 
-    align-items: center; 
-    justify-content: flex-start; 
-    position: relative; 
-}
-
-/* Gradient overlay */
-.header-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba rgba(7, 1, 36, 1), rgba(0, 0, 0, 0.3)); /* Adds a dark gradient overlay */
-    z-index: 1; /* Ensures the overlay is above the image */
-}
-
-/* Text container */
+/* herocontainer */
 .heroimage {
-    position: relative;
-    z-index: 2; /* Places text above the overlay */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 2rem;
-    max-width: 50%; /* Limits the width of the content area */
-}
-
-/* Text styling */
-.text-content {
-    color: white;
-    max-width: 50%; 
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Enhances text contrast */
-    margin-left: 2rem;
-    text-align: left;
-}
-
-/* Heading and paragraph styling */
-h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-/* Mobile and tablet responsive styles */
-
-
-@media (max-width: 928px) {
-     h1 {
-        font-size: 2rem; 
-    }
-
-    h2 {
-        font-size: 1.8rem; 
-    }
-
-    p {
-        font-size: 0.8rem; 
-    }
+     background-image: url(./images/hero_img.webp); 
+   background-repeat: no-repeat;
+    width: 100%; /* Limits the width of the content area */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+     display: block;
 
 }
-@media (max-width: 768px) {
-    .text-content {
-        max-width: 90%; 
-        margin-left: 1rem;
-        text-align: center; 
-    }
-
-    .header-container {
-        background-position: top;
-        min-height: 100vh;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.5rem;
-    }
+  /* Text styling */
+  .text-content {
+  color: white;
+  max-width: 50%; /* Restrict the width of text */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: left; /* Ensure the text is aligned left */
+  padding: 2rem;
+  padding-top: 17rem; /* Space the text from top */
+  margin-left: 2rem; /* Add margin for left side */
 }
 
-@media (max-width: 515px) {
-    h1 {
-        font-size: 1.2rem;
-    }
 
-    h2 {
-        font-size: 0.8rem;
-    }
+  /* Mobile responsiveness */
+ @media (max-width: 768px) {
+  .text-content {
+    max-width: 80%; /* Increase text content width on mobile */
+    padding: 2rem; /* Adjust padding */
+    padding-top: 10rem; /* Adjust space from top */
+    margin-left: 1rem; /* Adjust margin for mobile */
+    text-align: center; /* Center text on smaller screens */
+  }
 
-    .heroimage p {
-        font-size: 0.3rem; 
-        /* display: block;  */
-    }
+  h1 {
+    font-size: 2rem; /* Adjust font size */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
 }
+
+    
 </style>
 
 
