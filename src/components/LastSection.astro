@@ -7,41 +7,39 @@ import Button from "./Button.astro"
 <div class="calendar-container"><img id="calendar-image"src="./images/calendar.png" alt="calendar">
 </div>
 <div class="button-container">
-    <Button>book tryllekunstner</Button>
+    <Button>book en af os</Button>
 </div>
 
 <!-- ********* Pricebar -->
 
 <div class="pricebar-container">
-  <h3 id="pricebar-heading">Støt TrylleStjernerne</h3>
-  <h4 id="pricebar-subheading">Lad Børn Opleve Magi og Glæde</h4>
-  <p id="pricebar-text">TrylleStjernerne er en organisation under foreningen KidsAid, som er en fond, der støtter syge og sårbare børn og unge i Danmark. 
-
+  <h1>STØT TRYLLESTJERNERNE</h1>
+  <h2>Lad Børn Opleve Magi og Glæde</h2>
+  <p>TrylleStjernerne er en organisation under foreningen KidsAid, som er en fond, der støtter syge og sårbare børn og unge i Danmark. <br>
   Du kan give støtte direkte til KidsAid her. - Men du kan også give din støtte direkte til TrylleStjernerne forneden! 
   </p>
 <img id="pricebar-image"src="./images/pricebar.png" alt="pricebar">
-</div>
 <div class="button-container">
     <Button>indend og støt</Button>
+</div>
 </div>
 
 <!-- ********* tilmeldt -->
 
 <div class="tilmeldt-container">
-<h3 id="tilmeldt-heading">Tilmeld dig vores <br>nyhedsbrev</h3>
-<h4 id="tilmeldt-subheading">- Og følg med i TrylleStjernernes hverdag!</h4>
+<h1>TILMELD DIG VORES NYHEDSBREV</h1>
+<h2>- Og følg med i TrylleStjernernes hverdag!</h2>
 <input type="email" name="mail" placeholder="skriv din email" required />
-</div>
 <div class="button-container">
-<Button>skriv din mail</Button>
+    <Button>tilmeld mig</Button>
+    </div>
 </div>
 
 <!-- ********* icons -->
 
 <div class="icons">
     <img src="./images/logo-insta.png" alt="">
-      <img src="./images/facebook.png" alt="">
-
+    <img src="./images/facebook.png" alt="">
 </div>
 
 <!-- ********* styles -->
@@ -54,8 +52,6 @@ import Button from "./Button.astro"
         width: 100%;
     }
     .calendar-container{
-        display: grid;
-        grid-template-columns: 1fr;
         justify-content: center;
         margin-top: 8rem;
         margin-bottom: 2rem;
@@ -65,113 +61,44 @@ import Button from "./Button.astro"
     }
 
       .pricebar-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-           margin-top: 1rem;
-        margin-bottom: 2rem;
-        margin-right: -1rem;
-        margin-left: 15rem;
-        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
     }
        .tilmeldt-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-           margin-top: 8rem;
-        margin-bottom: 2rem;
-        margin-right: 2rem;
-        margin-left: 30rem;
-        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
     }
     .icons{
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 1fr;
-        justify-content: space-between;
-        gap: 2rem;
-            margin-top: 8rem;
-        margin-bottom: 2rem;
-        margin-right: 2rem;
-        margin-left: 35rem;
-        padding: 2rem 11rem 11rem 2rem;
-        height: 500px;
-        width: 500px;
+        margin:2rem;
+        gap: 1rem;
+        width:7%;
     }
-      button {
-        background-color: #007BFF; /* Blue background */
-        color: white; /* White text */
-        border: none; /* No border */
-        padding: 10px 20px; /* Spacing inside button */
-        border-radius: 8px; /* Rounded corners */
-        font-size: 16px; /* Text size */
-        cursor: pointer; /* Pointer cursor on hover */
-    }
-
-    button:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-    }
+    
       .button-container {
         display: flex;
-        justify-content: flex-end; /* Aligns the button to the right */
+        justify-content: flex-end; 
+        margin-right:17rem;
+        margin-bottom: 5rem;
     }
    
-    p{
-    font-size: var(--fontsize-body);
-        margin-bottom: var(--space-sm);
-        color: orange;
-        }
 
         input{
-            margin-top: 3rem;
-            width: 40%;
-            height: 40%;
-            margin-left: 9rem;
+            margin-top:0.5rem;
+            width: 30%;
+            height: 30px;
+            align-content: center;
+            border-radius: 30px;
         }
-#pricebar-heading {
-    font-size: 2rem; /* Slightly larger font for heading */
-    color:#a77334; /* Blue color to match theme */
-    margin-bottom: 1rem; /* Space below the heading */
-    text-align: center; /* Center the heading */
-      margin-right: 21rem;
-}
-
-#pricebar-subheading {
-    font-size: 1.5rem; /* Slightly smaller than the main heading */
-    color:  #bd7b2a; /* Darker blue for contrast */
-    margin-bottom: 1rem; /* Space below the subheading */
-    text-align: center; /* Center the subheading */
-       margin-right: 21rem;
-}
-
-#pricebar-text {
-    font-size: 1rem; /* Normal readable text size */
-    color:#bd7b2a; /* Dark gray for good readability */
-    line-height: 1.6; /* Add space between lines */
-    text-align: justify; /* Make the text look clean and aligned */
-padding: 10px 260px 260px 10px;
-    margin-bottom: -190px;
-    margin-left: 4rem;
-}
 
 #pricebar-image {
-    width: 80%; /* Adjust the width to 70% of its container */
-    margin-right: 2rem; /* Add space to the right */
-    display: block; /* Ensure it behaves like a block-level element if needed */
-    margin-top: 1px;
+    display: block;
+    margin:auto;
+    align-self: center;
+  width: 60%;
+  margin-top:1rem;
 }
 #calendar-image{
     margin-left: -15rem;
-}
-#tilmeldt-heading{
-     font-size: 2rem; /* Slightly larger font for heading */
-    color:#a77334; /* Blue color to match theme */
-    margin-bottom: 1rem; /* Space below the heading */
-    text-align: center; /* Center the heading */
-      margin-right: 40rem;
-
-}
-#tilmeldt-subheading{
-    margin-left: 11rem;
 }
 
 /* Breakpoints */
@@ -179,7 +106,7 @@ padding: 10px 260px 260px 10px;
 
 
 /* 900px */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     .calendar-container, .pricebar-container, .tilmeldt-container {
         margin-left: 5rem;
         margin-right: 5rem;
@@ -197,13 +124,6 @@ padding: 10px 260px 260px 10px;
     .icons {
         margin-left: 5rem;
         margin-right: 5rem;
-    }
-
-    #tilmeldt-heading {
-        margin-right: 10rem;
-    }
-     #tilmeldt-subheading {
-        margin-left: 6rem;
     }
 
     input {
@@ -239,14 +159,6 @@ padding: 10px 260px 260px 10px;
     .icons img {
         max-width: 50%;  /* Limit image width to 80% of container */
     }
-
-    #tilmeldt-heading {
-        margin-right: 5rem;
-    }
-     #tilmeldt-subheading {
-        margin-left: 5rem;
-    }
-
     input {
         width: 70%;
         margin-left: 1rem;
@@ -275,15 +187,11 @@ padding: 10px 260px 260px 10px;
         padding: 2rem;
     }
 
-    #tilmeldt-heading {
-        margin-right: 3rem;
-    }
-
     input {
         width: 80%;
         margin-left: 0;
     }
-}
+} */
 
 
 
