@@ -60,6 +60,25 @@ align-items: center;
  align-items: center;
 }
 
+@media (max-width: 750px) {
+.text, .text-1{
+    background:#242F53;
+}
+}
+@media (min-width: 750px) {
+    .text {
+    text-align: justify;
+display: flex;
+max-width: 85ch;
+justify-content: center;
+flex-direction: column;
+padding: 3rem;
+max-width: 85ch;
+font-size: 1.2rem;
+line-height: 1.5;
+margin-right: 100vh;
+}
+
 .text-1 {
 text-align: justify;
 display: flex;
@@ -73,17 +92,5 @@ line-height: 1.5;
 margin-left: 100vh;
 }
 
-.text {
-    text-align: justify;
-display: flex;
-max-width: 85ch;
-justify-content: center;
-flex-direction: column;
-padding: 3rem;
-max-width: 85ch;
-font-size: 1.2rem;
-line-height: 1.5;
-margin-right: 100vh;
 }
-
 </style>
